@@ -25,6 +25,16 @@ cd Python-3.9.7/
 make
 make install
 ```
+Install SQLlite 3.34
+```
+wget https://sqlite.org/2021/sqlite-autoconf-3340100.tar.gz
+tar -xvf sqlite-autoconf-3340100.tar.gz && cd sqlite-autoconf-3340100
+sudo apt-get install libreadline-dev
+./configure
+make
+sudo apt-get purge sqlite3
+sudo make install
+```
 
 Edit ~/.bashrc and insert the following
 ```
@@ -49,4 +59,22 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
 
+Create Virtual environment
+```
+python3 -m venv venv
+source venv/bin/activate
+```
 
+Install Dependencies
+```
+/home/$USER/venv/bin/python3 -m pip install --upgrade pip
+sudo apt install sqlite3 --upgrade
+python3 -m pip install wheel
+pip3 install homeassistant
+```
+
+Execute 
+```
+(venv) systemd@openstreet:~$ hass
+Unable to find configuration. Creating default one in /home/systemd/.homeassistant
+```
