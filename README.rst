@@ -1,51 +1,18 @@
-Home Assistant |Chat Status|
-=================================================================================
+Featured integrations
+---------------------
 
+|screenshot-integrations|
 
-### Installing Python 3.9
+The system is built using a modular approach so support for other devices or actions can be implemented easily. See also the `section on architecture <https://developers.home-assistant.io/docs/architecture_index/>`__ and the `section on creating your own
+components <https://developers.home-assistant.io/docs/creating_component_index/>`__.
 
+If you run into issues while using Home Assistant or during development
+of a component, check the `Home Assistant help section <https://home-assistant.io/help/>`__ of our website for further help and information.
 
-```
-sudo apt-get update
-sudo apt-get upgrade
-
-sudo apt-get install xz-utils
-sudo apt-get install build-essential
-sudo apt-get install libssl-dev
-sudo apt-get install libsqlite3-dev
-sudo apt-get install zlib1g-dev
-sudo apt-get install libffi-dev
-
-mkdir ~/python_src
-cd python_src
-wget https://www.python.org/ftp/python/3.9.7/Python-3.9.7.tgz
-tar xzvf Python-3.9.7.tgz
-cd Python-3.9.7/
-./configure --enable-shared --prefix=/home/$USER/Python-3.9.7 --with-ensurepip=install --enable-optimizations
-make
-make install
-```
-
-Edit ~/.bashrc and insert the following
-```
-vim ~/.bashrc
-```
-Paste the following:
-```
-export PATH=/home/$USER/Python-3.9.7/bin:$PATH
-export LD_LIBRARY_PATH=/home/$USER/Python-3.9.7/lib
-export LD_RUN_PATH=/home/$USER/Python-3.9.7/lib
-```
-
-Log out and login, now you should see python3 with new date
-```
-python3
-```
-You should see:
-```
-Python 3.9.7 (default, Dec 10 2019, 19:33:46) 
-[GCC 7.4.0] on linux
-Type "help", "copyright", "credits" or "license" for more information.
->>> 
-```
+.. |Chat Status| image:: https://img.shields.io/discord/330944238910963714.svg
+   :target: https://discord.gg/c5DvZ4e
+.. |screenshot-states| image:: https://raw.githubusercontent.com/home-assistant/core/master/docs/screenshots.png
+   :target: https://home-assistant.io/demo/
+.. |screenshot-integrations| image:: https://raw.githubusercontent.com/home-assistant/core/dev/docs/screenshot-integrations.png
+   :target: https://home-assistant.io/integrations/
 
