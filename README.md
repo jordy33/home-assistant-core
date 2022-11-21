@@ -76,5 +76,4 @@ pip3 install homeassistant
 Execute 
 ```
 (venv) systemd@openstreet:~$ hass
-Unable to find configuration. Creating default one in /home/systemd/.homeassistant
 ```
