@@ -69,7 +69,6 @@ source venv/bin/activate
 Install Dependencies
 ```
 /home/$USER/venv/bin/python3 -m pip install --upgrade pip
-sudo apt install sqlite3 --upgrade
 python3 -m pip install wheel
 pip3 install homeassistant
 ```
