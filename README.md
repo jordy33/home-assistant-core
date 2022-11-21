@@ -27,6 +27,7 @@ make install
 ```
 Install SQLlite 3.34
 ```
+cd /tmp
 wget https://sqlite.org/2021/sqlite-autoconf-3340100.tar.gz
 tar -xvf sqlite-autoconf-3340100.tar.gz && cd sqlite-autoconf-3340100
 sudo apt-get install libreadline-dev
