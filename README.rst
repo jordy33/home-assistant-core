@@ -3,6 +3,7 @@ Home Assistant |Chat Status|
 
 
 Installing Python 3.9
+
 ```
 sudo apt-get update
 sudo apt-get upgrade
