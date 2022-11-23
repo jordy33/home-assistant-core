@@ -35,6 +35,8 @@ sudo apt-get install libreadline-dev
 make
 sudo apt-get purge sqlite3
 sudo make install
+sudo cp /usr/local/lib/*sql* /usr/lib/x86_64-linux-gnu/
+sudo chmod a+x /usr/lib/x86_64-linux-gnu/*sql*
 ```
 
 Edit ~/.bashrc and insert the following
